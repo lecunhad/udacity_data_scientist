@@ -94,10 +94,10 @@ Collect other relevant pieces of information of accommodations and research abou
 
 [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/leandro-dias-6a446115a/)
 
-
+<!--
 <!-- ACKNOWLEDGEMENTS -->
-*** ## Referências
-
+ ## Referências
+-->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
