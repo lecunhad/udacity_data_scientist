@@ -11,110 +11,80 @@
 
 <!-- TABELA DE CONTEÚDOS -->
 <details open="open">
-  <summary>Sumário</summary>
+  <summary>Summary</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Sobre o Projeto</a>
+      <a href="#about-the-project">About the Project</a>
       <ul>
         <li><a href="#built-with">Frameworks</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Iniciando</a>
+      <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Pré Requisitos</a></li>
-        <li><a href="#installation">Instalação</a></li>
+        <li><a href="#prerequisites">Pre Requisites</a></li>
+        <li><a href="#installation">Instalation</a></li>
       </ul>
     </li>
-    <li><a href="#run">Executando</a></li>
-    <li><a href="#usecases">Casos de uso</a></li>
+    <li><a href="#run">Running</a></li>
+    <li><a href="#usecases">Use Cases</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contact">Contato</a></li>
-    <li><a href="#acknowledgements">Referências</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Reference</a></li>
   </ol>
 </details>
 
 
 
 <!-- ABOUT THE PROJECT -->
-## Sobre o Projeto
+## About the project
 
-O objetivo desse projeto é criar um modelo para gerar atas de reuniões automáticas, a partir de transcrições de reuniões gravadas através da aplicação Microsoft Teams 
+The objective of this project is to answer 3 business questions to meet the requirements of Project 1, from Udacity Data Scientist course. The chosen database was from Airbnb, with the objective of evaluating the data to assist students in Canada, a famous destination for studying the English language. 
 
 ### Frameworks
 
-Para conseguir rodar o notebook, faz-se necessário a instalação dos principais seguintes frameworks:
+To run the notebook, it is necessary to install the following frameworks:
 
-* [Transformers](https://github.com/huggingface/transformers)
-* [Pytorch](https://pytorch.org/)
-* [NLTK](https://www.nltk.org/)
 * [Scikit Learn](https://scikit-learn.org/)
 
-
 <!-- GETTING STARTED -->
-## Iniciando
+## Getting Started
 
-O notebook foi desenvolvido no ambiente [Google Colab](https://colab.research.google.com/github/tensorflow/examples/blob/master/courses/udacity_intro_to_tensorflow_for_deep_learning/l01c01_introduction_to_colab_and_python.ipynb)
+The notebook was developed in the environment [Google Colab](https://colab.research.google.com/github/tensorflow/examples/blob/master/courses/udacity_intro_to_tensorflow_for_deep_learning/l01c01_introduction_to_colab_and_python.ipynb)
 
-### Pré-requisitos
+### Prerequisites
 
-Este notebook foi testado em Python 3.7+, PyTorch 1.3.1+ e TensorFlow 2.0.
+This notebook was tested using Python 3.7+
 
-A biblioteca transformers mais atualizada apresentou bugs, portanto recomenda-se a instalação da versão 3.5
-* npm
-  ```
-  !pip install transformers==3.5
-  ```
+### Instalation
 
-### Instalação
+!pip install -U scikit-learn
 
-### Através do PIP
-
-
-Você deverá instalar Transformers em um [ambiente virtual](https://docs.python.org/3/library/venv.html). 
-
-Primeiramente, crie um ambiente virtual com a versão do Python que você irá utiliazar.
-
-Instale o TensorFlow 2.0 e PyTorch
-
-Assim que o TensorFlow 2.0 e ou PyTorch estiverem instalados, Transformers poderá ser instalado através do comando pip:
-
-
-1. Clone the repo
-   ```
-   !git clone https://github.com/huggingface/transformers
-   ```
-2. Install Transformers
-   ```
-   %cd transformers
-   !pip install
-   ```
-3. Utilizar a API in de tradução de textos para inglês
-   ```
-   !pip install googletrans==3.1.0a0
-   ```
+(In case you already have the scikit learn installed, you just need to import the library before running the code)
 
 
 <!-- RUN -->
-## Executando
+## Running
 
-Para testar a implementação, utilize o código Leandro_Dias_Projeto_Final_Curso_v2.ipynb que está armazenado neste repositório. Você deverá executar os códigos em sequência. Para carregar a base de dados, foi fornecido o arquivo reuniao1.txt
+There are 2 notebooks to be executed. Udacity_Projeto_1_Part_I is related to the first business question, and Udacity_Projeto_1_Part_II. The databases to be used on both is calendar and listings (they was uploaded in [Google Drive](https://drive.google.com/drive/folders/19OyP2QDz1iAcIGm-K_yVUe9yaePowjec?usp=sharing).
 
 
 <!-- USECASES -->
-## Casos de uso
+## Use Cases
 
-O foco desse projeto é utilizar técnicas de sumarização para construção de atas de reuniões automáticas. No entanto, as técnicas de sumarização utilizadas podem ser direcionadas para outros casos de uso como sumarização de notícias, textos, etc.
+Motivation: Support students who wants to travel abroad to study English, in order to improve a best choice and improve the planner.
+Three business questions:
+- Can they spend less money at some specific season or period time of the year?
+- What are the accommodation information most correlated to price variation?
+- Is possible to predict the price for respective acomodation according it features? 
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-Coletar extensa base de dados de reuniões e respectivas atas de reunião para fazer o tuning do modelo e ou treinar um novo.
+Retrain the models to improve predictions
 
-Utilizar uma pré modelagem para extração apenas de tópicos via clusterização
-
-Utilizar abordagem hibrida extrativa e abstrativa para compor melhor os resumos para cada tópico de entrada
+Collect other relevant pieces of information of accommodations and research about the rules of prices formulation.
 
 
 <!-- CONTACT -->
@@ -126,14 +96,7 @@ Utilizar abordagem hibrida extrativa e abstrativa para compor melhor os resumos 
 
 
 <!-- ACKNOWLEDGEMENTS -->
-## Referências
-
-* [Transformers](https://huggingface.co/transformers/)
-* [Pegasus](https://arxiv.org/pdf/1912.08777.pdf)
-* [Sumarização](https://www.analyticsvidhya.com/blog/2019/06/comprehensive-guide-text-summarization-using-deep-learning-python/)
-* [Sumarização com Pegasus](https://chetanambi.medium.com/generate-summaries-using-googles-pegasus-library-772633a161c2)
-* [Sumarização de vídeos longos](https://www.researchgate.net/publication/316948434_Semantic_Text_Summarization_of_Long_Videos)
-* [Pegasus by Google](https://ai.googleblog.com/2020/06/pegasus-state-of-art-model-for.htm)
+*** ## Referências
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
